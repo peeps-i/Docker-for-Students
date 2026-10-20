@@ -1,0 +1,12 @@
+{
+  "name": "canva-gui",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": { "label": "Desktop", "onAutoForward": "notify" }
+  },
+  "postStartCommand": "docker compose up -d"
+}
